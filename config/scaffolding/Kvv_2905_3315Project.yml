@@ -26,16 +26,54 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: kvv
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.kvv_2905_3315.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: Kvv_2905_3315Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.kvv_2905_3315.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: Kvv_2905_3315Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_2905_3315.integrations:AlertsCRTandERT
   packages:
   - name: Kvv_2905_3315Project
     version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
@@ -55,6 +93,8 @@ services:
     version: "1.0"
   - name: JMS2waySSL
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
@@ -71,11 +111,29 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2060
+- serviceName: project.kvv_2905_3315.integrations:SIQAAdapterFlow
+  packages:
+  - name: Kvv_2905_3315Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_2905_3315.integrations:SSL_JDBC_test
   packages:
   - name: Kvv_2905_3315Project
     version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: SSL_JDBC_Test
     version: "1.0"
